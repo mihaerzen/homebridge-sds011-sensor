@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "Sds011HomebridgePlugin",
+  "pluginAlias": "Sds011SensorPlugin",
   "pluginType": "accessory",
   "singular": false,
   "schema": {
