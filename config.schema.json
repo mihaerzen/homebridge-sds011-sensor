@@ -1,0 +1,28 @@
+{
+  "pluginAlias": "DhtHomebridgePlugin",
+  "pluginType": "accessory",
+  "singular": false,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "required": true,
+        "default": "Dht sensor"
+      },
+      "sensorType": {
+        "title": "Sensor type",
+        "type": "number",
+        "required": true,
+        "default": 22
+      },
+      "sensorPin": {
+        "title": "Sensor pin",
+        "type": "number",
+        "required": true,
+        "default": 4
+      }
+    }
+  }
+}
