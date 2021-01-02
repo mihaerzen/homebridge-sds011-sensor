@@ -48,6 +48,9 @@ class Sds011SensorPlugin implements AccessoryPlugin {
     sds011Sensor.on('measure', (data) => {
       this.pm10 = data.PM10 as number;
       this.pm25 = data['PM2.5'] as number;
+
+      this.airQualityService.setCharacteristic(hap.Characteristic.PM2_5Density, this.pm25);
+      this.airQualityService.setCharacteristic(hap.Characteristic.PM10Density, this.pm10);
     });
 
     // create handlers for required characteristics
