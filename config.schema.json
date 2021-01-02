@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "DhtHomebridgePlugin",
+  "pluginAlias": "Sds011HomebridgePlugin",
   "pluginType": "accessory",
   "singular": false,
   "schema": {
@@ -9,19 +9,19 @@
         "title": "Name",
         "type": "string",
         "required": true,
-        "default": "Dht sensor"
+        "default": "Air quality sensor"
       },
-      "sensorType": {
-        "title": "Sensor type",
-        "type": "number",
-        "required": true,
-        "default": 22
+      "portPath": {
+        "title": "Port path",
+        "type": "string",
+        "required": false,
+        "default": "/dev/ttyUSB0"
       },
-      "sensorPin": {
-        "title": "Sensor pin",
+      "interval": {
+        "title": "Readings interval in minutes",
         "type": "number",
-        "required": true,
-        "default": 4
+        "required": false,
+        "default": 30
       }
     }
   }
